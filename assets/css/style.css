@@ -181,6 +181,17 @@ h3 { font-size: 1.55rem; }
 .lead-magnet h1 { font-size: clamp(3rem, 5vw, 5rem); }
 .lead-magnet > div:last-child > p:not(.eyebrow) { color: var(--muted); }
 .mailerlite-form-shell { max-width: 580px; margin-top: 34px; }
+.mailerlite-form-shell .ml-embedded:empty {
+  display: flex;
+  min-height: 64px;
+  align-items: center;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: .9rem;
+}
+.mailerlite-form-shell .ml-embedded:empty::before {
+  content: "Form yükleniyor…";
+}
 .mailerlite-form-shell .ml-form-embedContainer { margin: 0 !important; }
 .mailerlite-form-shell .ml-form-embedWrapper {
   width: 100% !important;
