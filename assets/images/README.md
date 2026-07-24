@@ -1,13 +1,14 @@
 # Site görselleri
 
-Bu klasöre aşağıdaki JPG dosyalarını isimlerini değiştirmeden yükleyin:
+Bu klasöre aşağıdaki JPEG dosyalarını isimlerini değiştirmeden yükleyin:
 
-- `hero-travel.jpg` — 1800 × 1200 px, yatay 3:2
-- `about-kerem.jpg` — 1200 × 1500 px, dikey 4:5
-- `behind-scenes.jpg` — 1200 × 1500 px, dikey 4:5
-- `kerem-ayca-story.jpg` — 1600 × 1200 px, yatay 4:3
-- `hotel-experience-1.jpg` — dikey 4:5
-- `hotel-experience-2.jpg` — dikey 4:5
-- `guide-cover.jpg` — 1200 × 1500 px, dikey 4:5
+- `hero-travel.jpeg` — yatay 3:2
+- `about-kerem.jpeg` — dikey 4:5
+- `behind-scenes.jpeg` — dikey 4:5
+- `kerem-ayca-story.jpeg` — yatay 4:3
+- `hotel-experience-1.jpeg` — dikey 4:5
+- `hotel-experience-2.jpeg` — dikey 4:5
+- `guide-cover.jpeg` — dikey 4:5
 
-Fotoğrafları mümkünse sRGB profilinde, yaklaşık 300 KB–1.5 MB aralığında JPG olarak yükleyin. Dosya adlarında büyük harf, Türkçe karakter veya boşluk kullanmayın.
+Fotoğrafları mümkünse sRGB profilinde, yaklaşık 300 KB–1.5 MB aralığında
+JPEG olarak yükleyin.
