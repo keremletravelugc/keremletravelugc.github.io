@@ -17,14 +17,3 @@ if (menuButton && navigation) {
 document.querySelectorAll("[data-current-year]").forEach((element) => {
   element.textContent = new Date().getFullYear();
 });
-
-const waitlistForm = document.querySelector("[data-waitlist-form]");
-
-if (waitlistForm) {
-  waitlistForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const status = waitlistForm.querySelector(".form-status");
-    status.textContent =
-      "E-posta sistemi bir sonraki aşamada bağlanacak. Şimdilik Instagram’dan “REHBER” yazarak listeye katılabilirsin.";
-  });
-}
