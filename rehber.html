@@ -15,6 +15,25 @@
     ml("account", "2531274");
   </script>
   <script src="assets/js/site.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const formShell = document.querySelector(".mailerlite-form-shell");
+      if (!formShell) return;
+
+      const updateFormButton = function () {
+        formShell.querySelectorAll('button[type="submit"].primary, input[type="submit"]').forEach(function (button) {
+          if (button.tagName === "INPUT") {
+            button.value = "Ücretsiz rehberi gönder";
+          } else {
+            button.textContent = "Ücretsiz rehberi gönder";
+          }
+        });
+      };
+
+      updateFormButton();
+      new MutationObserver(updateFormButton).observe(formShell, { childList: true, subtree: true });
+    });
+  </script>
 </head>
 <body>
   <header class="site-header">
