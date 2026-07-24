@@ -21,17 +21,24 @@
       if (!formShell) return;
 
       const updateFormButton = function () {
-        formShell.querySelectorAll('button[type="submit"].primary, input[type="submit"]').forEach(function (button) {
-          if (button.tagName === "INPUT") {
-            button.value = "Ücretsiz rehberi gönder";
-          } else {
-            button.textContent = "Ücretsiz rehberi gönder";
-          }
-        });
+        const button = formShell.querySelector('button[type="submit"].primary, input[type="submit"]');
+        if (!button) return false;
+
+        const label = "Ücretsiz rehberi gönder";
+        if (button.tagName === "INPUT") {
+          if (button.value !== label) button.value = label;
+        } else if (button.textContent !== label) {
+          button.textContent = label;
+        }
+        return true;
       };
 
-      updateFormButton();
-      new MutationObserver(updateFormButton).observe(formShell, { childList: true, subtree: true });
+      if (updateFormButton()) return;
+
+      const observer = new MutationObserver(function () {
+        if (updateFormButton()) observer.disconnect();
+      });
+      observer.observe(formShell, { childList: true, subtree: true });
     });
   </script>
 </head>
