@@ -218,6 +218,13 @@ h3 { font-size: 1.55rem; }
   background: var(--terracotta-dark) !important;
   transform: translateY(-2px);
 }
+.mailerlite-form-shell .ml-form-embedSubmit button.primary {
+  font-size: 0 !important;
+}
+.mailerlite-form-shell .ml-form-embedSubmit button.primary::after {
+  content: "Ücretsiz rehberi gönder";
+  font-size: .96rem;
+}
 .mailerlite-form-shell .ml-form-checkboxRow,
 .mailerlite-form-shell .ml-form-embedPermissions { color: var(--muted) !important; }
 .mailerlite-form-shell .ml-form-checkboxRow p,
