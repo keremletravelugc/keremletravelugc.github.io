@@ -171,9 +171,10 @@ h3 { font-size: 1.55rem; }
 .post-card > div:last-child { padding: 28px; }
 .post-card h2 { margin: 10px 0 14px; font-size: 2rem; }
 .post-card p { color: var(--muted); }
-.post-image { aspect-ratio: 16/10; box-shadow: none; padding: 0; }
-.post-featured { grid-column: span 2; display: grid; grid-template-columns: 1.15fr .85fr; }
-.post-featured .post-image { aspect-ratio: auto; min-height: 430px; }
+.post-image { aspect-ratio: 4/5; box-shadow: none; padding: 0; }
+.post-image img { object-position: center; }
+.post-featured { grid-column: span 2; display: grid; grid-template-columns: .72fr 1.28fr; }
+.post-featured .post-image { aspect-ratio: 4/5; min-height: 0; }
 .coming-soon { display: inline-block; margin-top: 18px; color: var(--olive); font-weight: 800; }
 
 .lead-magnet { padding-block: 100px 130px; display: grid; grid-template-columns: .75fr 1.25fr; gap: clamp(50px, 8vw, 110px); align-items: center; }
@@ -263,7 +264,7 @@ h3 { font-size: 1.55rem; }
   .page-hero h1, .lead-magnet h1 { font-size: clamp(2.7rem, 12vw, 4rem); }
   .resource-grid, .blog-grid { grid-template-columns: 1fr; }
   .post-featured { grid-column: auto; }
-  .post-featured .post-image { min-height: 250px; }
+  .post-featured .post-image { min-height: 0; }
   .consultation-photo { height: 430px; }
   .lead-magnet { padding-block: 70px 90px; }
   .site-footer { grid-template-columns: 1fr; align-items: start; }
