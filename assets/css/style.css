@@ -253,9 +253,33 @@ h3 { font-size: 1.55rem; }
 }
 
 .legal-page { min-height: 70vh; padding-block: 100px; max-width: 850px; }
-.legal-page h1 { font-size: clamp(3rem, 5vw, 5rem); }
-.legal-page h2 { margin-top: 50px; font-size: 2rem; }
-.legal-page p { color: var(--muted); }
+.legal-page h1, .contact-page h1 { font-size: clamp(3rem, 5vw, 5rem); }
+.legal-page h2 { margin: 0 0 14px; font-size: clamp(1.65rem, 2.5vw, 2rem); }
+.legal-page p, .legal-page li { color: var(--muted); }
+.legal-lead { max-width: 700px; font-size: 1.18rem; line-height: 1.8; }
+.legal-block { padding-block: 34px; border-top: 1px solid var(--line); }
+.legal-block:first-of-type { margin-top: 45px; }
+.legal-block p:last-child, .legal-block ul:last-child { margin-bottom: 0; }
+.legal-block ul { padding-left: 1.2rem; }
+.legal-block li + li { margin-top: 9px; }
+.legal-block strong { color: var(--ink); }
+
+.contact-page { min-height: 70vh; padding-block: 100px; max-width: 1040px; }
+.contact-page h1 { margin-bottom: 18px; }
+.contact-page h1 em { color: var(--terracotta); }
+.contact-intro { max-width: 600px; color: var(--muted); font-size: 1.18rem; line-height: 1.7; }
+.contact-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 52px; }
+.contact-card { position: relative; min-height: 240px; padding: 30px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid var(--olive); background: var(--cream); color: var(--ink); transition: transform .2s ease, background .2s ease; }
+.contact-card:hover { transform: translateY(-5px); background: #fffdf8; }
+.contact-card-olive { background: var(--olive); color: var(--cream); }
+.contact-card-olive:hover { background: var(--olive-dark); }
+.contact-kicker { font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.contact-card strong { max-width: 90%; font-family: var(--serif); font-size: clamp(1.8rem, 3vw, 2.7rem); font-weight: 400; line-height: 1.05; }
+.contact-arrow { align-self: flex-end; font-size: 2rem; line-height: 1; }
+.contact-note { max-width: 660px; margin-top: 70px; padding: 32px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.contact-note h2 { margin: 8px 0 10px; font-size: clamp(1.7rem, 3vw, 2.4rem); }
+.contact-note p:last-child, .contact-support { color: var(--muted); line-height: 1.7; }
+.contact-support { margin-top: 25px; }
 
 .site-footer {
   width: min(1320px, calc(100% - 48px));
@@ -336,6 +360,9 @@ h3 { font-size: 1.55rem; }
   .lead-magnet { padding-block: 70px 90px; }
   .site-footer { grid-template-columns: 1fr; align-items: start; }
   .footer-links { flex-wrap: wrap; }
+  .contact-page, .legal-page { padding-block: 72px; }
+  .contact-options { grid-template-columns: 1fr; margin-top: 36px; }
+  .contact-card { min-height: 190px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
