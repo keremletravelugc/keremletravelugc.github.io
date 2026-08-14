@@ -110,9 +110,9 @@ h3 { font-size: 1.55rem; }
 }
 .paper-note { position: absolute; z-index: 4; padding: 18px; font-family: "Segoe Print", "Bradley Hand", cursive; box-shadow: 0 14px 30px rgba(62,45,30,.2); transform: rotate(-4deg); }
 .paper-note-small { left: -4%; top: 6%; background: #e9dfc8; color: var(--muted); }
-.paper-note-orange { right: -3%; bottom: 3%; width: 210px; background: var(--terracotta); color: var(--espresso); transform: rotate(5deg); }
+.paper-note-orange { right: -3%; bottom: 8%; width: 210px; background: var(--terracotta); color: var(--espresso); transform: rotate(5deg); }
 .paper-note-orange strong { display: block; margin-bottom: 7px; font-family: var(--serif); font-size: 1.35rem; }
-.stamp { position: absolute; z-index: 5; left: 51%; bottom: 0; width: 146px; height: 116px; border-radius: 48% 42% 50% 45%; display: grid; place-items: center; text-align: center; color: var(--warm-white); background: var(--olive); font: 600 2rem/1 var(--serif); transform: rotate(-7deg); }
+.stamp { position: absolute; z-index: 5; left: -2%; bottom: 4%; width: 146px; height: 116px; border-radius: 48% 42% 50% 45%; display: grid; place-items: center; text-align: center; color: var(--warm-white); background: var(--olive); font: 600 2rem/1 var(--serif); transform: rotate(-7deg); }
 .stamp small { display: block; font: 600 .72rem/1.25 var(--sans); }
 
 .intro { padding-block: 110px; text-align: center; }
@@ -323,7 +323,9 @@ h3 { font-size: 1.55rem; }
   .feature-card { padding: 26px; }
   .story { padding-block: 70px 90px; }
   .story-collage { min-height: 460px; }
-  .metric-row { grid-template-columns: 1fr; }
+  .metric-row { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; text-align: center; }
+  .metric-row strong { font-size: 1.9rem; }
+  .metric-row span { font-size: .7rem; white-space: nowrap; }
   .guide-callout { padding: 30px 22px; margin-bottom: 80px; }
   .page-hero { padding-block: 75px 50px; }
   .page-hero h1, .lead-magnet h1 { font-size: clamp(2.7rem, 12vw, 4rem); }
