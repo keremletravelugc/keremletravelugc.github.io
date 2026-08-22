@@ -382,6 +382,33 @@ h3 { font-size: 1.55rem; }
 .gallery-card{aspect-ratio:16/11}
 @media(max-width:640px){.portfolio-content{gap:42px}.portfolio-content h2,.portfolio-cta h2,.portfolio-final-cta h2{font-size:2.35rem;line-height:1.08}.portfolio-gallery{gap:14px}.gallery-card{aspect-ratio:16/12}.portfolio-cta,.portfolio-final-cta{padding-block:52px}.portfolio-cta .button,.portfolio-final-cta .button{padding-inline:14px;gap:10px}}
 
+/* Renkli satis bloklarinda kenarlardan nefes payi */
+.portfolio-content,
+.portfolio-cta,
+.portfolio-final-cta {
+  padding-inline: clamp(28px, 5vw, 72px);
+  box-sizing: border-box;
+}
+.portfolio-content .dark-list {
+  padding-inline: 8px;
+}
+.portfolio-content .portfolio-gallery {
+  padding-inline: 4px;
+}
+@media (max-width: 640px) {
+  .portfolio-content,
+  .portfolio-cta,
+  .portfolio-final-cta {
+    padding-inline: 24px;
+  }
+  .portfolio-content .dark-list {
+    padding-inline: 4px;
+  }
+  .portfolio-content .portfolio-gallery {
+    padding-inline: 0;
+  }
+}
+
 
 /* Otel İş Birliği Mesaj Bankası */
 .product-teaser {
