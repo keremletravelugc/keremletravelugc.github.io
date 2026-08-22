@@ -375,6 +375,13 @@ h3 { font-size: 1.55rem; }
 @media(max-width:900px){.portfolio-sales-hero,.portfolio-content{grid-template-columns:1fr;gap:45px}.portfolio-hero-previews{min-height:420px}.design-grid,.steps{grid-template-columns:repeat(2,1fr)}.portfolio-content{width:100%;padding-inline:24px}.fit-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:640px){.portfolio-sales-hero{padding-block:55px 70px}.portfolio-sales-hero h1{font-size:clamp(2.7rem,12vw,4rem)}.portfolio-highlights{grid-template-columns:1fr}.portfolio-hero-previews{min-height:310px}.portfolio-preview{width:65%;border-width:6px;font-size:1rem;padding:14px}.preview-one{right:0}.preview-two{left:0;top:23%}.preview-three{right:5%;bottom:0}.portfolio-problem,.portfolio-designs,.portfolio-flow,.portfolio-how,.portfolio-fit,.portfolio-faq,.portfolio-important{padding-block:65px}.design-grid,.steps,.fit-grid,.portfolio-flow ol{grid-template-columns:1fr}.portfolio-content{padding-block:60px}.portfolio-gallery{gap:10px}.portfolio-cta,.portfolio-final-cta{padding-block:65px}.portfolio-cta .button,.portfolio-final-cta .button{width:100%;font-size:.9rem}.portfolio-content h2,.portfolio-designs h2,.portfolio-flow h2,.portfolio-how h2,.portfolio-fit h2,.portfolio-faq h2{font-size:2.4rem}}
 
+/* Portfolyo sayfasinda kolaj ve CTA sikismalarini azalt */
+.portfolio-content{gap:clamp(95px,9vw,150px)}
+.portfolio-content h2{font-size:clamp(2.45rem,4vw,4.2rem);line-height:1.05}
+.portfolio-gallery{gap:22px}
+.gallery-card{aspect-ratio:16/11}
+@media(max-width:640px){.portfolio-content{gap:42px}.portfolio-content h2,.portfolio-cta h2,.portfolio-final-cta h2{font-size:2.35rem;line-height:1.08}.portfolio-gallery{gap:14px}.gallery-card{aspect-ratio:16/12}.portfolio-cta,.portfolio-final-cta{padding-block:52px}.portfolio-cta .button,.portfolio-final-cta .button{padding-inline:14px;gap:10px}}
+
 
 /* Otel İş Birliği Mesaj Bankası */
 .product-teaser {
